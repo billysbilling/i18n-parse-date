@@ -1,6 +1,6 @@
 {
   "name": "i18n-parse-date",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/billysbilling/i18n-parse-date",
   "main": "i18n-parse-date.js",
   "license": "MIT",
