@@ -59,9 +59,17 @@ module.exports = function(input) {
     if (i18n.locale() === 'da_DK') {
         patterns.push([
             //dmy
-            /^(\d{1,2})(\d{1,2})(\d{2,4})$/,
+            /^(\d{2})(\d{2})(\d{2,4})$/,
             {
                 year: 3,
+                month: 2,
+                day: 1
+            }
+        ]);
+        patterns.push([
+            //dm
+            /^(\d{2})(\d{2})$/,
+            {
                 month: 2,
                 day: 1
             }
@@ -69,9 +77,17 @@ module.exports = function(input) {
     } else {
         patterns.push([
             //mdy
-            /^(\d{1,2})(\d{1,2})(\d{2,4})$/,
+            /^(\d{2})(\d{2})(\d{2,4})$/,
             {
                 year: 3,
+                month: 1,
+                day: 2
+            }
+        ]);
+        patterns.push([
+            //md
+            /^(\d{2})(\d{2})$/,
+            {
                 month: 1,
                 day: 2
             }
